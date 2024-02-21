@@ -1,24 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Class_comp_ex from './Class_comp_ex';
+import Function_com_ex from './Function_com_ex';
 
 function App() {
+
+  const person = [
+    {
+      id: 1,
+      first_name: "tirth",
+      age: "16"
+    },
+    {
+      id: 2,
+      first_name: "gajjar",
+      age: "17"
+    }
+  ]
+
+
+
+  const main_class = [
+    {
+      id: 1,
+      fname: "tirth",
+      lname: "gajjar"
+    },
+
+    {
+      id: 2,
+      fname: "Bhavesh",
+      lname: "Gandhi"
+    }
+  ]
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Class_comp_ex name="Pass to class com" />
+      {/* <Function_com_ex arr={person} bday="tirth" /> */}
+
+    </>
   );
 }
 
