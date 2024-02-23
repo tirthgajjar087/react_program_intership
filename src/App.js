@@ -1,6 +1,7 @@
 import './App.css';
-import Class_comp_ex from './Class_comp_ex';
-import Function_com_ex from './Function_com_ex';
+
+import Class_comp_ex from './example/Class_comp_ex';
+import Function_com_ex from './example/Function_com_ex';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
     <>
 
       <Class_comp_ex name="Pass to class com" />
-      {/* <Function_com_ex arr={person} bday="tirth" /> */}
+      <Function_com_ex arr={person} bday="tirth" />
 
     </>
   );

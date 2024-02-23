@@ -1,0 +1,17 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "class component intro",
+  "steps": [
+    {
+      "file": "src/example/Class_comp_ex.js",
+      "description": "This is default function when start to the class componet\n",
+      "line": 5
+    },
+    {
+      "file": "src/example/Class_comp_ex.js",
+      "description": "In check_props_methods, there is on button.WHen user click this button user have send data to parent component called that name is parentMehods() so output will look like print data.",
+      "line": 37
+    }
+  ],
+  "ref": "main"
+}
