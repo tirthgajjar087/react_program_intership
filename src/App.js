@@ -2,6 +2,7 @@ import './App.css';
 
 import Class_comp_ex from './example/Class_comp_ex';
 import Function_com_ex from './example/Function_com_ex';
+import Hook_ex from './example/Hook_ex';
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       id: 2,
       first_name: "gajjar",
       age: "17"
-    }
+    },
+
   ]
 
 
@@ -38,8 +40,15 @@ function App() {
   return (
     <>
 
+
+
+
+
       <Class_comp_ex name="Pass to class com" />
+
       <Function_com_ex arr={person} bday="tirth" />
+
+      <Hook_ex />
 
     </>
   );

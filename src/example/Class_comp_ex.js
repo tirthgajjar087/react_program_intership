@@ -4,6 +4,7 @@ import Check_props_method from './Check_props_method';
 
 export default class Class_comp_ex extends Component {
     constructor() {
+
         super();
         console.log("Hey!I am in constructor.")
 
