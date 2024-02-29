@@ -3,6 +3,7 @@ import Function_com_ex from './Function_com_ex';
 import Check_props_method from './Check_props_method';
 
 export default class Class_comp_ex extends Component {
+
     constructor() {
 
         super();
@@ -20,6 +21,7 @@ export default class Class_comp_ex extends Component {
     meKnow = () => {
 
         console.log("clicked !");
+
         this.setState({
             fname: "qwe",
             lname: "asd"

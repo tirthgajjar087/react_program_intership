@@ -5,6 +5,7 @@ export const nameContext = createContext()
 
 function Hook_ex() {
     const [fname, setFname] = useState('Tirth')
+
     const testRef = useRef();
 
     const [carDet, setCardet] = useState({
@@ -34,15 +35,23 @@ function Hook_ex() {
         })
     }
 
+    // useEffect(() => {
+    //     console.log("---- I'm useEffect -------")
+    //     // console.log('your useRef is ----', testRef)
+    // })
+
     useEffect(() => {
-        console.log("---- I'm useEffect -------")
-        // console.log('your useRef is ----', testRef)
-    })
+        console.log("---- I'm useEffect  [check how useEffect run]-------")
+    }, [number]);
+
+
 
     return (
         <>
             {/* SINGLE VALUE CHANGE USING USESTATE */}
+
             <h1 ref={testRef}>Testing useRef hook</h1>
+
             <p>Hook name is -: {fname}</p>
             <button onClick={() => setFname("gajjar")}>change state</button>
 
@@ -64,6 +73,7 @@ function Hook_ex() {
                     )
                 })}
                 <button onClick={handleArr}>Click me!</button>
+
             </div>
 
         </>
