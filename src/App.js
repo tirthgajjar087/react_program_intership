@@ -12,6 +12,7 @@ import Function_com_ex from './example/Function_com_ex';
 import Hook_ex from './example/Hook_ex';
 import Simple_form from './example/Simple_form';
 import Navbar from './example/Navbar';
+import CheckDyamic from './example/CheckDyamic';
 
 function App() {
 
@@ -52,13 +53,14 @@ function App() {
 
       <BrowserRouter>
 
-        <Routes>
+        <Routes>w
           <Route path='/' element={<Navbar />}>
-            
+            {/* <Route index element={<Class_comp_ex />}></Route> */}
             <Route path='/class_component' element={<Class_comp_ex name="Pass to class com" />}></Route>
             <Route path='/function_component' element={<Function_com_ex arr={person} bday="tirth" />}></Route>
             <Route path='/hook' element={<Hook_ex />}></Route>
             <Route path="/form" element={<Simple_form />}></Route>
+            <Route path="/dynamicroute/:id" element={<CheckDyamic />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

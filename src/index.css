@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.main_nav {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.main_nav a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.main_nav a:hover {
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(13, 13, 117);
+}
