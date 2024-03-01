@@ -42,16 +42,16 @@ function Simple_form() {
     return (
         <>
             <form onSubmit={handleSUbmitData}>
-                <label>First name</label>
+                <label htmlFor='fname'>First name</label>
                 <input type="text" name="fname" id="fname" value={person.fname} onChange={handleData} />
 
-                <label>Last name</label>
+                <label htmlFor='lname'>Last name</label>
                 <input type="text" name="lname" id="lname" value={person.lname} onChange={handleData} />
 
-                <label>Email ID</label>
+                <label htmlFor='emailId'>Email ID</label>
                 <input type="text" name="emailId" id="emailId" value={person.emailId} onChange={handleData} />
 
-                <label>password</label>
+                <label htmlFor='password'>password</label>
                 <input type="password" name="password" id="password" value={person.password} onChange={handleData} />
 
                 <button type='submit'>SUBMIT</button>

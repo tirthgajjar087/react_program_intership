@@ -13,7 +13,7 @@ function Navbar() {
                 <Link to="/hook"> Hooks </Link>
                 <Link to="/form">Simple form</Link>
                 <Link to="/dynamicroute/:id">Dynamic routing</Link>
-
+                <Link to="/formikvalidation">Formik Validation</Link>
             </nav>
 
             <Outlet />

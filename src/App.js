@@ -13,6 +13,7 @@ import Hook_ex from './example/Hook_ex';
 import Simple_form from './example/Simple_form';
 import Navbar from './example/Navbar';
 import CheckDyamic from './example/CheckDyamic';
+import FormikValidation from './example/FormikValidation';
 
 function App() {
 
@@ -53,7 +54,7 @@ function App() {
 
       <BrowserRouter>
 
-        <Routes>w
+        <Routes>
           <Route path='/' element={<Navbar />}>
             {/* <Route index element={<Class_comp_ex />}></Route> */}
             <Route path='/class_component' element={<Class_comp_ex name="Pass to class com" />}></Route>
@@ -61,6 +62,7 @@ function App() {
             <Route path='/hook' element={<Hook_ex />}></Route>
             <Route path="/form" element={<Simple_form />}></Route>
             <Route path="/dynamicroute/:id" element={<CheckDyamic />}></Route>
+            <Route path='/formikvalidation' element={<FormikValidation />} />
           </Route>
         </Routes>
       </BrowserRouter>
